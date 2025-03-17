@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Admission</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/index.html">El club viejuner</a></li>
+        <li><a href="/robo.html">Los ladronzuelos de bicicletas</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>El club viejuner</h1>
+    </header>
+
+    <form>
+      <fieldset>
+        <legend>Tú:</legend>
+        <div tabindex>
+          <label for="fname">Nombre:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Nombre"
+            required
+            autofocus
+          />
+        </div>
+        <div>
+          <label for="fsurname">Apellidos:</label>
+          <input
+            type="text"
+            id="fsurname"
+            name="fsurname"
+            placeholder="Apellidos"
+            required
+          />
+        </div>
+        <div>
+          <label for="fage">Edad:</label>
+          <input
+            type="number"
+            id="fage"
+            name="fage"
+            min="65"
+            max="90"
+            required
+          />
+        </div>
+        <div id="sex">
+          <span>Sexo:</span>
+          <input type="radio" id="man" name="sex" value="man" required />
+          <label for="man">Hombre</label>
+          <input type="radio" id="woman" name="sex" value="woman" />
+          <label for="woman">Mujer</label>
+          <input type="radio" id="other" name="sex" value="other" />
+          <label for="oher">No binario</label>
+        </div>
+        <div>
+          <label for="old">Me siento viejuner:</label>
+          <input type="checkbox" name="old" id="old" />
+        </div>
+        <div>
+          <label for="extra">Escribe algo sobre tí:</label> <br />
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Tus circunstancias:</legend>
+        <div>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="phone">Teléfono:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{9}"
+            required
+          />
+        </div>
+      </fieldset>
+      <div>
+        <input type="reset" value="Borrar" />
+        <input type="submit" value="Enviar" />
+      </div>
+    </form>
+  </body>
+</html>
